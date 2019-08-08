@@ -1,0 +1,6 @@
+FROM node:lts-alpine
+MAINTAINER Lucas Morais lucasmorais.dev@gmail.com
+RUN mkdir /frontend
+WORKDIR /frontend
+COPY ./code/frontend /frontend
+USER node
